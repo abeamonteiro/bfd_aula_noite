@@ -7,7 +7,7 @@ caso o "git add ." tenha sido no arquivo errado, para restaurar, usar: "git rest
 
 para parar o terminal: 
 
-----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 
 aula 02
 
@@ -21,3 +21,14 @@ aula 02
 - operações: Soma (+) , subtração (-), multiplicação (*), divisão convencional (/), divisão por inteiro (//), módulo -resto da divisão pelo inteiro- (%), exponencial (**)
 
 ctrl + : -comenta e descomenta o texto todo de uma só vez, e ''' antes e depois de um bloco de texto 
+
+----------------------------------------------------------------------------------------------------
+
+aula 06
+
+CRUD
+instalação do venv dentro do repositorio
+em crud: python -m venv .venv  (instala venv)
+source .venv/bin/activate   
+pip install django 
+pip freeze
