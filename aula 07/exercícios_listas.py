@@ -32,9 +32,31 @@ numeros = [1, 2, 3, 2, 4, 2, 5]
 print(numeros.count(2))
 
 # 7- Percorra a lista livros e exiba cada livro com a frase: "O livro <nome do livro> é interessante"
+for livro in lista_livros_Chimamanda:
+    print(f"O livro {livro} é interessante")
 
 # 8- Dada a lista idades = [12, 18, 25, 14, 30], use um laço para exibir somente as idades maiores ou iguais a 18.
+lista_idades = [12, 18, 25, 14, 30]
+
+for idade in lista_idades:
+    if idade >= 18:
+       print(idade)
+
 # 9- Crie uma lista valores = [10, 20, 30, 40]. Use um laço for para calcular manualmente a soma de todos os valores.
+lista_valores = [10, 20, 30, 40]
+
+for valor in lista_valores:
+    soma = 0
+    soma += valor
+    
+print(soma)
+    
 # 10- Use input para receber 3 notas de dois alunos. As notas de cada aluno precisam ser armazenadas em uma lista separada que deve ser armazenada dentro de outra lista chamada notas, exemplo: notas = [[7, 8, 9], [6, 5, 7]]
 # No fim, imprima a média de cada aluno.
+n1 = int(input("Digite o valor da primeira nota: ")) #lembrar que o input vai ler como string
+n2 = int(input("Digite o valor da segunda nota: "))
+n3 = int(input("Digite o valor da terceira nota: "))
 
+notas = [n1, n2, n3]
+media = ((n1 + n2 + n3)//3)
+print("Sua média é: ", media)
