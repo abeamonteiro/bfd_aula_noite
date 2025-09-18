@@ -146,3 +146,10 @@ class Turma:
 
 turma = Turma()
 turma.listar_alunos()
+
+#8. Na classe `Aluno`, implemente o método `__str__` para que, ao imprimir um objeto da classe, 
+# apareça algo como:
+#`"Aluno: Maria - Nota: 9.5"`. Teste imprimindo os objetos.
+
+#9. Crie uma classe `Cachorro` com um atributo de classe `especie = "Canis familiaris"`
+#e atributos de instância `nome` e `idade`. Mostre a diferença entre acessar `especie` pelo objeto e pela classe.
