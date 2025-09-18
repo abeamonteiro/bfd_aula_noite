@@ -121,20 +121,20 @@ Saque2.sacar(105)
 ## 7.
 
 class Aluno:
-    def __init__(self, name: str , nota: float):
+    def __init__(self, name: str , note: float):
         self.name = name
-        self.nota = nota
+        self.note = note
 
 class Turma:
     def __init__(self):
         self.alunos = []
 
     Aluno1 = Aluno("José, ", 10.0)
-    print(Aluno1.name, Aluno1.nota)
+    print(Aluno1.name, Aluno1.note)
     Aluno2 = Aluno("Gabriela, ", 7.5)
-    print(Aluno2.name, Aluno2.nota)
+    print(Aluno2.name, Aluno2.note)
     Aluno3 = Aluno("Maria, ", 9.0)
-    print(Aluno3.name, Aluno3.nota)
+    print(Aluno3.name, Aluno3.note)
 
     def adicionar_aluno(self, aluno):
         self.alunos.append(aluno)
@@ -147,9 +147,28 @@ class Turma:
 turma = Turma()
 turma.listar_alunos()
 
-#8. Na classe `Aluno`, implemente o método `__str__` para que, ao imprimir um objeto da classe, 
-# apareça algo como:
-#`"Aluno: Maria - Nota: 9.5"`. Teste imprimindo os objetos.
-
+#8. 
+class Aluno:
+    def __str__(self, name:str, note: float):
+        self.name = name
+        self.nota = note
+    
+    Aluna = Aluno("Maria, \n ", 9.5)
+   
+        
 #9. Crie uma classe `Cachorro` com um atributo de classe `especie = "Canis familiaris"`
-#e atributos de instância `nome` e `idade`. Mostre a diferença entre acessar `especie` pelo objeto e pela classe.
+#e atributos de instância `nome` e `idade`. Mostre a diferença entre acessar `especie` 
+# pelo objeto e pela classe.
+
+class Cachorro:
+    especie = "Canis Familiaris"
+    def __init__(self, nome: str, idade: int):
+        self.nome = nome
+        self.idade = idade
+    def __str__(self):
+        return f"O nome da cachorra é {self.nome}, e a sua idade é {self.idade}."
+       
+Bixano1 = Cachorro("Malu", 7) 
+print(Bixano1)
+print(Bixano1.especie) #Acesso pelo objeto
+print(Cachorro.especie) #Acesso pela classe
